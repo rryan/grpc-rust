@@ -1,5 +1,4 @@
 use futures::*;
-use futures::stream::Stream;
 
 pub struct StreamMerge2<S1, S2: Stream> {
     stream1: stream::Fuse<S1>,
